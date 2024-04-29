@@ -9,7 +9,7 @@ const { model } = require('mongoose')
 const requireAuth = (User)=>{
     return async(req, res, next)=>{
 
-        const token  = req.cookies.medicoo || req.headers?.authorization?.split(' ')[1]
+        const token  = req?.cookies?.medicoo || req.headers?.authorization?.split(' ')[1]
 
         if(!token){
             return res.status(401).json({msg: 'You are not Authorized'})
