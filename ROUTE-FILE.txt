@@ -1,0 +1,56 @@
+// Patient Routes
+
+LOG [RouterExplorer] Mapped {/api/v1/patient/my-details, GET} route +1ms
+LOG [RouterExplorer] Mapped {/api/v1/patient/get-prescriptions, GET} route +0ms
+LOG [RouterExplorer] Mapped {/api/v1/patient/get-prescriptionById/:id, GET} route +1ms
+LOG [RouterExplorer] Mapped {/api/v1/patient/get-currentMedications, GET} route +0ms
+LOG [RouterExplorer] Mapped {/api/v1/patient/get-medicalReports, GET} route +1ms
+LOG [RouterExplorer] Mapped {/api/v1/patient/book-appointment, POST} route +0ms
+LOG [RouterExplorer] Mapped {/api/v1/patient/get-appointments, GET} route +0ms
+LOG [RouterExplorer] Mapped {/api/v1/patient/appointment-review/:id, POST} route +1ms
+LOG [RouterExplorer] Mapped {/api/v1/patient/inactive-prescriptions, GET} route +0ms
+LOG [RouterExplorer] Mapped {/api/v1/patient/inactive-prescription/:id, DELETE} route +0ms
+
+
+// Doctor Routes
+LOG [RouterExplorer] Mapped {/api/v1/doctor/my-details, GET} route +0ms
+LOG [RouterExplorer] Mapped {/api/v1/doctor/get-appointments, GET} route +1ms
+LOG [RouterExplorer] Mapped {/api/v1/doctor/get-patientPrescriptions/:id, GET} route +0ms
+LOG [RouterExplorer] Mapped {/api/v1/doctor/get-patientReports/:id, GET} route +0ms
+LOG [RouterExplorer] Mapped {/api/v1/doctor/get-patientMedications/:id, GET} route +0ms
+LOG [RouterExplorer] Mapped {/api/v1/doctor/addPrecriptions/:id, POST} route +86ms
+LOG [RouterExplorer] Mapped {/api/v1/doctor/delete-prescription-request/:id, POST} route +1ms
+LOG [RouterExplorer] Mapped {/api/v1/doctor/diverge-appointments, PATCH} route +0ms
+LOG [RouterExplorer] Mapped {/api/v1/doctor/diverge-appointment/:id, PATCH} route +0ms
+LOG [RouterExplorer] Mapped {/api/v1/doctor/update-appointment-timings, PATCH} route +0ms
+
+
+// Hospital Routes
+
+LOG [RouterExplorer] Mapped {/api/v1/hospital/my-details, GET} route +1ms
+LOG [RouterExplorer] Mapped {/api/v1/hospital/appointments, GET} route +0ms
+LOG [RouterExplorer] Mapped {/api/v1/hospital/emergency-appointments, GET} route +0ms
+LOG [RouterExplorer] Mapped {/api/v1/hospital/doctors, GET} route +0ms
+LOG [RouterExplorer] Mapped {/api/v1/hospital/doctors/:doctorId, GET} route +0ms
+LOG [RouterExplorer] Mapped {/api/v1/hospital/register-doctor, PATCH} route +1ms
+LOG [RouterExplorer] Mapped {/api/v1/hospital/remove-doctor, PATCH} route +0ms
+LOG [RouterExplorer] Mapped {/api/v1/hospital/doctor-appointment/:doctorId, GET} route +0ms
+LOG [RouterExplorer] Mapped {/api/v1/hospital/diverge-allAppointments, PATCH} route +0ms
+LOG [RouterExplorer] Mapped {/api/v1/hospital/diverge-sigleAppointment, PATCH} route +0ms
+LOG [RouterExplorer] Mapped {/api/v1/hospital/patients, GET} route +0ms
+LOG [RouterExplorer] Mapped {/api/v1/hospital/patients/:patientId, GET} route +1ms
+LOG [RouterExplorer] Mapped {/api/v1/hospital/patient-appointments/:patientId, GET} route +0ms
+LOG [RouterExplorer] Mapped {/api/v1/hospital/book-appointment, POST} route +0ms
+LOG [RouterExplorer] Mapped {/api/v1/hospital/register-patient-to-hospital, POST} route +0ms
+
+
+
+// Common Route Access without authentication
+
+LOG [RouterExplorer] Mapped {/api/v1/common-module/one, GET} route +1ms
+LOG [RouterExplorer] Mapped {/api/v1/common-module, GET} route +0ms
+LOG [RouterExplorer] Mapped {/api/v1/common-module/nearby-hospitals, POST} route +0ms
+LOG [RouterExplorer] Mapped {/api/v1/common-module/get-doctors, GET} route +0ms
+LOG [RouterExplorer] Mapped {/api/v1/common-module/get-hospitals, GET} route +0ms
+LOG [RouterExplorer] Mapped {/api/v1/common-module/get-doctor/:id, GET} route +0ms
+LOG [RouterExplorer] Mapped {/api/v1/common-module/get-hospital/:id, GET} route +0ms

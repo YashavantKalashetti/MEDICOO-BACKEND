@@ -46,6 +46,9 @@ const doctorSchema = mongoose.Schema({
     },consultingFees:{
         type: Number,
         default: 500
+    },specialization:{
+        type: String,
+        required: true
     },
     affiliatedHospital:{
         type: String,

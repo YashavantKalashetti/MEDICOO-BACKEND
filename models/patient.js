@@ -14,7 +14,7 @@ const patientSchema = new mongoose.Schema({
         type: Number,
         min:10,
         required: true
-    },
+    },  
     aadharNumber:{
         type: Number,
         unique: [true, "This Aadhar number is already registered"],

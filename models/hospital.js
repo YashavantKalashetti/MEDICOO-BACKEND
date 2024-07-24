@@ -33,10 +33,6 @@ const hospitalSchema = new mongoose.Schema({
     },
     coordinates: [Number],
   },
-  // doctors:{
-  //   type: [mongoose.Schema.Types.ObjectId],
-  //   ref: 'doctor'
-  // }
 });
 
 hospitalSchema.index({ location: '2dsphere' });
